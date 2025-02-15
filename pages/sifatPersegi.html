@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/output.css" />
+    <!-- icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      .hidden {
+        display: none;
+      }
+      .slide-down {
+        animation: slideDown 0.3s ease-out forwards;
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+ -->
+  <body>
+    <!-- <section
+      class="w-full min-h-[650px] mt-14 lg:py-4 py-12 bg-[url('../img/bg.png')] bg-no-repeat bg-cover bg-[#CB3025] overflow-hidden flex justify-center items-center"
+    >
+      <div
+        class="max-w-[1140px] lg:px-0 px-3 grid lg:grid-cols-2 grid-cols-1 items-center object-center lg:text-start text-center h-full lg:gap-3 gap-6"
+      >
+        <div class="flex flex-col lg:gap-5 gap-5 text-white">
+          <h1 class="lg:text-4xl text-3xl font-bold">
+            Dapatkan Untung Jutaan Rupiah Setiap Bulan!
+          </h1>
+          <span class="font-semibold">
+            Bisnis Agen Pulsa PPOB dan Pembayaran Digital bersama LinkPedia.
+            Dengan harga termurah dan komisi langsung cair, Anda bisa meraih
+            jutaan rupiah setiap bulan.
+          </span>
+          <div
+            class="grid lg:grid-cols-2 grid-cols-1 gap-3 lg:max-w-full max-w-[400px] mx-auto font-semibold"
+          >
+            <div class="flex flex-col text-sm gap-1">
+              <div class="flex gap-1">
+                <img
+                  src="./assets/img/icons/Check.png"
+                  alt=""
+                  class="w-5 h-5 mt-1"
+                />
+                <span>Pulsa dan E-Money Murah, untung besar!</span>
+              </div>
+
+              <div class="flex gap-1">
+                <img
+                  src="./assets/img/icons/Check.png"
+                  alt=""
+                  class="w-5 h-5 mt-1"
+                />
+                <span
+                  >Terima Pembayaran dengan QRIS, praktis tanpa tunai.
+                </span>
+              </div>
+
+              <div class="flex gap-1">
+                <img
+                  src="./assets/img/icons/Check.png"
+                  alt=""
+                  class="w-5 h-5 mt-1"
+                />
+                <span>Buka Rekening Bank, mudah dan cepat! </span>
+              </div>
+            </div>
+
+            <div class="flex flex-col text-sm gap-1">
+              <div class="flex gap-1">
+                <img
+                  src="./assets/img/icons/Check.png"
+                  alt=""
+                  class="w-5 h-5 mt-1"
+                />
+                <span>Produk PPOB Lengkap, bayar tagihan mudah!</span>
+              </div>
+
+              <div class="flex gap-1">
+                <img
+                  src="./assets/img/icons/Check.png"
+                  alt=""
+                  class="w-5 h-5 mt-1"
+                />
+                <span>Tiket Transportasi, semua tersedia!</span>
+              </div>
+
+              <div class="flex gap-1">
+                <img
+                  src="./assets/img/icons/Check.png"
+                  alt=""
+                  class="w-5 h-5 mt-1"
+                />
+                <span>Aplikasi Mudah, akses 24 jam, bisnis lancar!</span>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="lg:flex hidden justify-center items-center gap-2 text-lg font-semibold px-6 py-3 bg-[#FAEB3B] hover:bg-[#edde3f] text-black w-max rounded-full"
+          >
+            <img src="./assets/img/icons/login.png" class="w-6 h-auto" alt="" />
+            <span> DAFTAR GRATIS SEKARANG </span>
+          </a>
+          <span class="italic text-sm max-w-[400px] lg:mx-0 mx-auto"
+            >Bergabunglah dengan lebih dari 14 ribu agen yang telah sukses dan
+            rasakan sendiri hasilnya.</span
+          >
+
+          <div class="grid grid-cols-2 gap-5 px-4">
+            <a
+              href="#"
+              class="flex lg:hidden justify-center items-center gap-2 text-base font-semibold px-5 py-3 w-full bg-[#2B2A4C] hover:bg-[#22223e] text-white rounded-full"
+            >
+              <img
+                src="./assets/img/logo/apple.png"
+                class="w-4 h-auto"
+                alt=""
+              />
+              <span> App Store </span>
+            </a>
+
+            <a
+              href="#"
+              class="flex lg:hidden justify-center items-center gap-2 text-base font-semibold px-5 py-3 w-full bg-[#2B2A4C] hover:bg-[#22223e] text-white rounded-full"
+            >
+              <img
+                src="./assets/img/logo/google-play.png"
+                class="w-6 h-auto"
+                alt=""
+              />
+              <span> Play Store </span>
+            </a>
+          </div>
+        </div>
+
+        <img
+          src="./assets/img/image.png"
+          alt=""
+          class="lg:max-w-[590px] max-w-[400px]"
+        />
+      </div>
+    </section> -->
+
+    <section
+      class="w-full bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-center"
+    >
+      <div class="bg-white/60">
+        <div
+          class="max-w-[650px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[250px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover relative"
+        >
+          <a
+            href="../index.html"
+            class="bg-[#E8F8FF] text-[#017EB9] border-2 border-[#017EB9] flex justify-center items-center lg:text-base text-sm px-5 py-1 w-max absolute top-3 left-3 z-30 rounded-full"
+            >Kembali</a
+          >
+          <div
+            class="flex h-full justify-between items-center flex-col mx-auto w-full relative px-6"
+          >
+            <img src="../assets/image/logokampus.png" alt="" class="mx-auto" />
+            <img
+              src="../assets/image/logo.png"
+              alt=""
+              class="mx-auto w-40 h-40"
+            />
+            <div
+              class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center"
+            >
+              <div
+                class="rounded-full p-2 w-10 h-10 font-bold bg-amber-400 absolute left-2"
+              >
+                1
+              </div>
+              <span class="uppercase font-semibold"
+                >Sifat - sifat persegi Panjang</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full min-h-[100vh] h-full bg-[url('./image/bgbody.png')] bg-amber-500 bg-no-repeat bg-cover bg-center"
+    >
+      <div class="bg-white/80 py-10">
+        <div
+          class="max-w-[650px] w-full mx-auto bg-no-repeat bg-cover px-3 pt-5"
+        >
+          <div
+            class="flex flex-col gap-5 relative bg-white px-3 py-4 rounded-xl"
+          >
+            <!-- isi -->
+            <div class="text-center">
+              <h1 class="text-2xl font-semibold">Ayo, Kita Belajar</h1>
+              <p>Mengenai sifat-sifat persegi panjang</p>
+              <img
+                src="../assets/image/card2.png"
+                alt=""
+                class="w-max py-4 mx-auto"
+              />
+            </div>
+
+            <section class="">
+              <div class="py-2 mx-auto text-center bg-[#FFB159]">
+                Ayo Kita Berfikir!
+              </div>
+
+              <p class="mt-2 text-[#292929]">
+                Hai kelas 5, Apa kalian tahu, bentuk yang sering kita lihat di
+                sekitar kita, seperti meja, layar televisi, atau bahkan jendela
+                rumah kita, semuanya adalah persegi panjang! Tapi tahukah kalian
+                bahwa persegi panjang itu punya sifat-sifat khusus yang
+                membuatnya berbeda dengan bentuk lainnya?
+              </p>
+
+              <p class="font-semibold mt-2 text-[#292929]">
+                Agar kalian lebih paham, ayoo kita bersama-sama belajar untuk
+                mengetahui sifat sifat persegi panjang..
+              </p>
+            </section>
+
+            <section class="">
+              <div class="py-2 mx-auto text-center bg-[#05DBED]">
+                Ayo Kita Pahami!
+              </div>
+
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="">
+                  <button
+                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                    onclick="toggleContent('content1')"
+                  >
+                    Sifat-Sifat Persegi Panjang
+                    <span>&#9662;</span>
+                  </button>
+                  <div id="content1" class="hidden py-3">
+                    <p class="mt-2">
+                      Persegi panjang memiliki sifat-sifat khusus sehingga bisa
+                      membedakan dengan bangun datar yang lain.
+                    </p>
+                    <img
+                      src="../assets/image/sifatPersegi/sifat.png"
+                      alt="Ilustrasi Kebun"
+                      class="w-full h-40 object-contain rounded mt-2"
+                    />
+                    <p class="mt-2">
+                      Dari gambar di atas diperoleh sifat-sifat persegi panjang,
+                      yaitu:
+                    </p>
+
+                    <p class="mt-2 ml-2">
+                      a. Memiliki 4 buah sisi, yaitu sisi AB, BC, CD, dan AD.
+                      <br />
+                      b. Memiliki dua pasang sisi yang sejajar dan sama panjang,
+                      yaitu AB // CD dan BC // AD. <br />
+                      c. Memiliki 4 buah sudut yang berbentuk siku-siku atau
+                      besarnya 90o. <br />
+                      d. Memiliki 2 buah diagonal yang sama panjang dan
+                      berpotongan, yaitu AC dan BD. <br />
+                      e. Memiliki 2 simetri lipat dan simerti putar.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="">
+                  <button
+                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                    onclick="toggleContent('content2')"
+                  >
+                    Vidio Pembelajaran
+                    <span>&#9662;</span>
+                  </button>
+                  <div id="content2" class="hidden py-3">Vidio</div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleContent(id) {
+        document.querySelectorAll("[id^=content]").forEach((el) => {
+          if (el.id === id) {
+            if (el.classList.contains("hidden")) {
+              el.classList.remove("hidden");
+              el.classList.add("slide-down");
+            } else {
+              el.classList.add("hidden");
+              el.classList.remove("slide-down");
+            }
+          } else {
+            el.classList.add("hidden");
+            el.classList.remove("slide-down");
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
