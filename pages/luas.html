@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/output.css" />
+    <!-- icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      .hidden {
+        display: none;
+      }
+      .slide-down {
+        animation: slideDown 0.3s ease-out forwards;
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+ -->
+  <body>
+    <section
+      class="w-full bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-center"
+    >
+      <div class="bg-white/60">
+        <div
+          class="max-w-[650px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[200px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover relative"
+        >
+          <a
+            href="../index.html"
+            class="bg-[#E8F8FF] text-[#017EB9] border-2 border-[#017EB9] flex justify-center items-center lg:text-base text-sm px-5 py-1 w-max absolute top-3 left-3 z-30 rounded-full"
+            >Kembali</a
+          >
+          <div
+            class="flex h-full justify-between items-center flex-col mx-auto w-full relative px-6"
+          >
+            <img src="../assets/image/logokampus.png" alt="" class="mx-auto" />
+            <img
+              src="../assets/image/logo.png"
+              alt=""
+              class="mx-auto w-30 h-30"
+            />
+            <div
+              class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center"
+            >
+              <div
+                class="rounded-full p-2 w-10 h-10 font-bold bg-amber-400 absolute left-2"
+              >
+                2
+              </div>
+              <span class="uppercase font-semibold">Luas persegi Panjang</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full min-h-[100vh] h-full bg-[url('./image/bgbody.png')] bg-amber-500 bg-no-repeat bg-cover bg-center"
+    >
+      <div class="bg-white/80 py-10">
+        <div
+          class="max-w-[650px] w-full mx-auto bg-no-repeat bg-cover px-3 pt-5"
+        >
+          <div
+            class="flex flex-col gap-5 relative bg-white px-3 py-4 rounded-xl"
+          >
+            <!-- isi -->
+            <div class="text-center">
+              <h1 class="text-2xl font-semibold">Ayo, Kita Belajar</h1>
+              <p>Mengenai luas persegi panjang</p>
+              <img
+                src="../assets/image/card3.png"
+                alt=""
+                class="w-max py-4 mx-auto"
+              />
+            </div>
+
+            <section class="">
+              <div class="py-2 mx-auto text-center bg-[#FEDD01]">
+                Ayo Kita Berfikir!
+              </div>
+
+              <img
+                src="../assets/image/luasPersegi/ibutani.png"
+                alt="ibu tani disawah"
+                class="my-3 mx-auto"
+              />
+
+              <p class="mt-2 text-[#292929]">
+                Bu Tani memiliki kebun berbentuk persegi panjang. Bu Tani ingin
+                menanam sayuran di kebunnya, tetapi dia membutuhkan bantuan
+                untuk menghitung luas kebun agar bisa menentukan jumlah bibit 
+                yang perlu dibeli. Sayangnya, Bu Tani hanya tahu panjang dan
+                lebar kebunnya, tetapi tidak tahu cara menghitung luasnya.
+                Bisakah kalian membantunya?
+                <br />
+                PERTANYAAN :
+              </p>
+
+              <p class="mt-2 ml-2 text-[#292929]">
+                a. Bu Tani memiliki kebun berbentuk persegi panjang dengan
+                panjang 12 meter dan lebar 8 meter. <br />
+                b. Siswa diminta untuk membantu Bu Tani menghitung luas kebunnya
+                agar bisa membeli bibit dengan jumlah yang sesuai.
+              </p>
+            </section>
+
+            <section class="">
+              <div class="py-2 mx-auto text-center bg-[#FFB159]">
+                Ayo Kita Pahami!
+              </div>
+
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="">
+                  <button
+                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                    onclick="toggleContent('content1')"
+                  >
+                    Luas Persegi Panjang
+                    <span>&#9662;</span>
+                  </button>
+                  <div id="content1" class="hidden py-3">
+                    <p class="mt-2">
+                      Luas persegi panjang merupakan luas daerah dalam yang
+                      dibatasi oleh persegi panjang.
+                    </p>
+                    <img
+                      src="../assets/image/luasPersegi/luasPersegiPanjang.png"
+                      alt="Luas Persegi Panjang"
+                      class="w-full h-40 object-contain rounded mt-2"
+                    />
+                  </div>
+                </div>
+
+                <div class="">
+                  <button
+                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                    onclick="toggleContent('content2')"
+                  >
+                    Rumus Luas Persegi Panjang
+                    <span>&#9662;</span>
+                  </button>
+                  <div id="content2" class="hidden py-3">
+                    <p class="mt-2">
+                      Persegi panjang diatas mempunyai panjang p= AB=DC dan
+                      lebar l=BC=AD. <br />
+                      Maka rumus luas persegi panjang adalah :
+                    </p>
+                    <img
+                      src="../assets/image/luasPersegi/rumusluas.png"
+                      alt="Luas Persegi Panjang"
+                      class="w-full h-40 object-contain rounded mt-2"
+                    />
+                    <p class="font-semibold">Keterangan :</p>
+                    <p class="pl-10 font-semibold">
+                      K = keliling <br />
+                      p = panjang <br />
+                      l = lebar
+                    </p>
+                  </div>
+                </div>
+
+                <div class="">
+                  <button
+                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                    onclick="toggleContent('content3')"
+                  >
+                    Vidio Pembelajaran
+                    <span>&#9662;</span>
+                  </button>
+                  <div id="content3" class="hidden py-3">
+                    <iframe
+                      width="100%"
+                      class="h-auto lg:h-[300px]"
+                      src="https://www.youtube.com/embed/U1Dy-cwC7KE?si=qyYbmUUWmJmBpdLy"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="py-2 mx-auto text-center w-full bg-[#05DBED]">
+                  Ayo Kita Bernyanyi
+                </div>
+                <p class="mt-2 ml-2 text-[#292929]">
+                  Setelah kalian memahami materi, ayo nyanyikan lagu ini bersama
+                  teman sekelasmu.
+                </p>
+                <iframe
+                  width="100%"
+                  class="h-auto lg:h-[300px]"
+                  src="https://www.youtube.com/embed/U1Dy-cwC7KE?si=qyYbmUUWmJmBpdLy"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
+
+              <!--  Ayo Berdiskusi -->
+              <div class="flex flex-col gap-2 mt-3">
+                <div class="py-2 mx-auto text-center w-full bg-[#FDDC01]">
+                  Ayo Kita Berdiskusi
+                </div>
+                <p class="mt-2 ml-2 text-[#292929]">
+                  Berdiskusi <br />
+                  <br />
+
+                  1. Buatlah kelompok terdiri dari 3 siswa <br />
+                  2. Siapkan buku tulis untuk menjawab soal yang sudah disiapkan
+                  <br />
+                  3. Tuliskan nama dan nomor absen setiap anggota <br />
+                  4. Kemudian presentasikan hasil erja kelompokmu di depan kelas
+                </p>
+
+                <div class="mt-3">
+                  <button
+                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                    onclick="toggleContent('content4')"
+                  >
+                    Soal Level 1
+                    <span>&#9662;</span>
+                  </button>
+                  <div id="content4" class="hidden py-3">
+                    <img
+                      src="../assets/image/luasPersegi/soal1.png"
+                      alt="ibu tani disawah"
+                      class="my-3 mx-auto"
+                    />
+                    <p class="mt-2 ml-2 text-[#292929]">
+                      Di sebuah desa, seorang ayah ingin membuat kebun sayur di
+                      halaman belakang rumahnya yang berbentuk persegi panjang.
+                      Ayah meminta bantuanmu untuk menghitung luas kebun agar
+                      bisa menentukan jumlah pupuk yang dibutuhkan.
+                      <br />
+                      PERTANYAAN : <br />
+                      Hitunglah luas kebun tersebut.
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                    onclick="toggleContent('content5')"
+                  >
+                    Soal Level 2
+                    <span>&#9662;</span>
+                  </button>
+                  <div id="content5" class="hidden py-3">
+                    <img
+                      src="../assets/image/luasPersegi/soal2.png"
+                      alt="ibu tani disawah"
+                      class="my-3 mx-auto"
+                    />
+                    <p class="mt-2 ml-2 text-[#292929]">
+                      Siti memiliki sebuah kebun berbentuk persegi panjang.
+                      Panjang kebun tersebut adalah 12 meter, dan lebarnya 8
+                      meter. Siti ingin menanam bunga di seluruh kebunnya.
+                      <br />
+                      <b> PERTANYAAN : </b>
+                    </p>
+                    <p class="mt-2 ml-4 text-[#292929]">
+                      a)     Berapakah luas kebun Siti? <br />
+                      b)     Jika setiap meter persegi kebun membutuhkan 5 bibit
+                      bunga, berapa banyak bibit bunga yang diperlukan Siti
+                      untuk menanam bunga di seluruh kebunnya?
+                    </p>
+                  </div>
+                </div>
+                <div class="">
+                  <button
+                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                    onclick="toggleContent('content6')"
+                  >
+                    Soal Level 3
+                    <span>&#9662;</span>
+                  </button>
+                  <div id="content6" class="hidden py-3">
+                    <img
+                      src="../assets/image/luasPersegi/soal3.png"
+                      alt="ibu tani disawah"
+                      class="my-3 mx-auto"
+                    />
+                    <p class="mt-2 ml-2 text-[#292929]">
+                      Sebuah taman berbentuk persegi panjang akan ditanami
+                      rumput. Panjang taman tersebut adalah 12 meter, dan
+                      lebarnya 8 meter. Rumput yang digunakan bisa menutupi
+                      seluruh taman. <br />
+                      <b> PERTANYAAN : </b>
+                    </p>
+                    <p class="mt-2 ml-4 text-[#292929]">
+                      a)     Berapakah luas taman tersebut? <br />
+                      b)     Jika harga penanaman rumput adalah Rp25.000 per
+                      meter persegi, berapa biaya yang diperlukan untuk menutupi
+                      seluruh taman dengan rumput? <br />
+                      c)     Pak Agus hanya memiliki uang Rp2.000.000. Apakah
+                      uang Pak Agus cukup untuk menutupi seluruh biaya penanaman
+                      rumput? Jika tidak cukup, berapa kekurangan uangnya?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleContent(id) {
+        document.querySelectorAll("[id^=content]").forEach((el) => {
+          if (el.id === id) {
+            if (el.classList.contains("hidden")) {
+              el.classList.remove("hidden");
+              el.classList.add("slide-down");
+            } else {
+              el.classList.add("hidden");
+              el.classList.remove("slide-down");
+            }
+          } else {
+            el.classList.add("hidden");
+            el.classList.remove("slide-down");
+          }
+        });
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

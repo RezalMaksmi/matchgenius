@@ -11,6 +11,10 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
 
     <style>
       .hidden {
@@ -165,7 +169,7 @@
     >
       <div class="bg-white/60">
         <div
-          class="max-w-[650px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[250px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover relative"
+          class="max-w-[650px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[200px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover relative"
         >
           <a
             href="../index.html"
@@ -179,7 +183,7 @@
             <img
               src="../assets/image/logo.png"
               alt=""
-              class="mx-auto w-40 h-40"
+              class="mx-auto w-30 h-30"
             />
             <div
               class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center"
@@ -221,6 +225,52 @@
             <section class="">
               <div class="py-2 mx-auto text-center bg-[#FFB159]">
                 Ayo Kita Berfikir!
+              </div>
+
+              <div class="swiper-container w-full overflow-hidden py-3">
+                <div class="swiper-wrapper">
+                  <div
+                    class="swiper-slide flex flex-col text-center items-center"
+                  >
+                    <img
+                      src="../assets/image/sifatPersegi/pintu.png"
+                      alt="Pintu"
+                      class="w-40 h-40 object-contain mx-auto"
+                    />
+                    <p class="mt-2">Pintu</p>
+                  </div>
+                  <div
+                    class="swiper-slide flex flex-col text-center items-center"
+                  >
+                    <img
+                      src="../assets/image/sifatPersegi/lemari.png"
+                      alt="Lemari"
+                      class="w-40 h-40 object-contain mx-auto"
+                    />
+                    <p class="mt-2">Lemari</p>
+                  </div>
+                  <div
+                    class="swiper-slide flex flex-col text-center items-center"
+                  >
+                    <img
+                      src="../assets/image/sifatPersegi/buku.png"
+                      alt="Buku Tulis"
+                      class="w-40 h-40 object-contain mx-auto"
+                    />
+                    <p class="mt-2">Buku Tulis</p>
+                  </div>
+
+                  <div
+                    class="swiper-slide flex flex-col text-center items-center"
+                  >
+                    <img
+                      src="../assets/image/sifatPersegi/papantulis.png"
+                      alt="Buku Tulis"
+                      class="w-40 h-40 object-contain mx-auto"
+                    />
+                    <p class="mt-2">Papan Tulis</p>
+                  </div>
+                </div>
               </div>
 
               <p class="mt-2 text-[#292929]">
@@ -288,7 +338,18 @@
                     Vidio Pembelajaran
                     <span>&#9662;</span>
                   </button>
-                  <div id="content2" class="hidden py-3">Vidio</div>
+                  <div id="content2" class="hidden py-3">
+                    <iframe
+                      width="100%"
+                      class="h-auto lg:h-[300px]"
+                      src="https://www.youtube.com/embed/inxpoH1veGM?si=jgjMT8FTlvoRGwv8"
+                      title="YouTube video player"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      referrerpolicy="strict-origin-when-cross-origin"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
                 </div>
               </div>
             </section>
@@ -314,6 +375,22 @@
           }
         });
       }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
     </script>
   </body>
 </html>
