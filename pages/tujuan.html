@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style -->
+    <link rel="stylesheet" href="../assets/output.css" />
+    <!-- icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+
+    <style>
+      .hidden {
+        display: none;
+      }
+      .slide-down {
+        animation: slideDown 0.3s ease-out forwards;
+      }
+      @keyframes slideDown {
+        from {
+          opacity: 0;
+          transform: translateY(-10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+  </head>
+  <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+ -->
+  <body>
+    <section
+      class="w-full bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-center"
+    >
+      <div class="bg-white/60">
+        <div
+          class="max-w-[650px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[200px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover relative"
+        >
+          <a
+            href="../index.html"
+            class="bg-[#E8F8FF] text-[#017EB9] border-2 border-[#017EB9] flex justify-center items-center lg:text-base text-sm px-5 py-1 w-max absolute top-3 left-3 z-30 rounded-full"
+            >Kembali</a
+          >
+          <div
+            class="flex h-full justify-between items-center flex-col mx-auto w-full relative px-6"
+          >
+            <img src="../assets/image/logokampus.png" alt="" class="mx-auto" />
+            <img
+              src="../assets/image/logo.png"
+              alt=""
+              class="mx-auto w-30 h-30"
+            />
+            <div
+              class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center"
+            >
+              <!-- <div
+                class="rounded-full p-2 w-10 h-10 font-bold bg-amber-400 absolute left-2"
+              >
+                1
+              </div> -->
+              <span class="uppercase font-semibold">Tujuan Pembelajaran</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="w-full min-h-[100vh] h-full bg-[url('./image/bgbody.png')] bg-amber-500 bg-no-repeat bg-cover bg-center"
+    >
+      <div class="bg-white/80 py-10 min-h-[100vh]">
+        <div
+          class="max-w-[650px] w-full mx-auto bg-no-repeat bg-cover px-3 pt-5"
+        >
+          <div
+            class="flex flex-col gap-5 relative bg-white px-3 py-4 rounded-xl"
+          >
+            <!-- isi -->
+            <div class="text-center">
+              <img
+                src="../assets/image/tujuan.png"
+                alt=""
+                class="w-max lg:w-[500px] py-4 mx-auto"
+              />
+            </div>
+
+            <section class="">
+              <div class="py-2 mx-auto text-center bg-[#FFB159]">
+                CAPAIAN PEMBELAJARAN
+              </div>
+
+              <p class="mt-2 text-[#292929]">
+                Pada akhir fase C, peserta didik dapat menentukan keliling dan
+                luas berbagai bentuk bangun datar (segitiga, segiempat, dan
+                segibanyak) serta gabungannya. Mereka dapat menghitung durasi
+                waktu dan mengukur besar sudut.
+              </p>
+            </section>
+
+            <section class="">
+              <div class="py-2 mx-auto text-center bg-[#05DBED]">
+                TUJUAN PEMBELAJARAN
+              </div>
+
+              <p class="mt-2 text-[#292929]">
+                Menentukan sifat persegi panjang, luas dan keliling persegi
+                panjang.
+              </p>
+            </section>
+
+            <section class="">
+              <div class="py-2 mx-auto text-center bg-[#FDDC01]">
+                INDIKATOR TUJUAN PEMBELAJARAN
+              </div>
+
+              <p class="mt-2 text-[#292929]">
+                a) Siswa mampu menentukan sifat-sifat persegi panjang <br />
+                b) Siswa mampu memecahkan keliling persegi panjang <br />
+                c) Siswa mampu memecahkan luas persegi panjang
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function toggleContent(id) {
+        document.querySelectorAll("[id^=content]").forEach((el) => {
+          if (el.id === id) {
+            if (el.classList.contains("hidden")) {
+              el.classList.remove("hidden");
+              el.classList.add("slide-down");
+            } else {
+              el.classList.add("hidden");
+              el.classList.remove("slide-down");
+            }
+          } else {
+            el.classList.add("hidden");
+            el.classList.remove("slide-down");
+          }
+        });
+      }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        slidesPerView: 2,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>

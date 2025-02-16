@@ -576,6 +576,9 @@
   .max-h-screen {
     max-height: 100vh;
   }
+  .min-h-\[100bh\] {
+    min-height: 100bh;
+  }
   .min-h-\[100vh\] {
     min-height: 100vh;
   }
@@ -2323,6 +2326,21 @@
   .lg\:w-\[70\%\] {
     @media (width >= 64rem) {
       width: 70%;
+    }
+  }
+  .lg\:w-\[200px\] {
+    @media (width >= 64rem) {
+      width: 200px;
+    }
+  }
+  .lg\:w-\[400px\] {
+    @media (width >= 64rem) {
+      width: 400px;
+    }
+  }
+  .lg\:w-\[500px\] {
+    @media (width >= 64rem) {
+      width: 500px;
     }
   }
   .lg\:max-w-\[590px\] {
