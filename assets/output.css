@@ -1332,6 +1332,12 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
+  .bg-\[\#017EB9\] {
+    background-color: #017EB9;
+  }
+  .bg-\[\#01b5e2\] {
+    background-color: #01b5e2;
+  }
   .bg-\[\#2B2A4C\] {
     background-color: #2B2A4C;
   }
@@ -1370,6 +1376,12 @@
   }
   .bg-\[\#FFB159\] {
     background-color: #FFB159;
+  }
+  .bg-\[\#aeeefe\] {
+    background-color: #aeeefe;
+  }
+  .bg-\[\#d4f5fd\] {
+    background-color: #d4f5fd;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
