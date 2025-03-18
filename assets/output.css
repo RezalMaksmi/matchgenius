@@ -2309,6 +2309,11 @@
       height: 400px;
     }
   }
+  .lg\:h-max {
+    @media (width >= 64rem) {
+      height: max-content;
+    }
+  }
   .lg\:w-52 {
     @media (width >= 64rem) {
       width: calc(var(--spacing) * 52);
