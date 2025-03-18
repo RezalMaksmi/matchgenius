@@ -616,6 +616,9 @@
   .w-\[30px\] {
     width: 30px;
   }
+  .w-auto {
+    width: auto;
+  }
   .w-full {
     width: 100%;
   }
