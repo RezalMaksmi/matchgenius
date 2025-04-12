@@ -1,44 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- style -->
-    <link rel="stylesheet" href="../assets/output.css" />
-    <!-- icons -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
 
-    <style>
-      .hidden {
-        display: none;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- style -->
+  <link rel="stylesheet" href="../assets/output.css" />
+  <!-- icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    .slide-down {
+      animation: slideDown 0.3s ease-out forwards;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
       }
-      .slide-down {
-        animation: slideDown 0.3s ease-out forwards;
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      @keyframes slideDown {
-        from {
-          opacity: 0;
-          transform: translateY(-10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
-  </head>
-  <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+    }
+  </style>
+</head>
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
  -->
-  <body>
-    <!-- <section
+
+<body>
+  <!-- <section
       class="w-full min-h-[750px] mt-14 lg:py-4 py-12 bg-[url('../img/bg.png')] bg-no-repeat bg-cover bg-[#CB3025] overflow-hidden flex justify-center items-center"
     >
       <div
@@ -164,233 +163,179 @@
       </div>
     </section> -->
 
-    <section
-      class="w-full bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom"
-    >
-      <div class="bg-white/60">
-        <div
-          class="max-w-[850px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[200px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom relative"
-        >
-          <a
-            href="../index.html"
-            class="bg-[#E8F8FF] text-[#017EB9] border-2 border-[#017EB9] flex justify-center items-center lg:text-base text-sm px-5 py-1 w-max absolute top-3 left-3 z-30 rounded-full"
-            >Kembali</a
-          >
+  <section class="w-full bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom">
+    <div class="bg-white/60">
+      <div
+        class="max-w-[850px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[200px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom relative">
+        <a href="../index.html"
+          class="bg-[#E8F8FF] text-[#017EB9] border-2 border-[#017EB9] flex justify-center items-center lg:text-base text-sm px-5 py-1 w-max absolute top-3 left-3 z-30 rounded-full">Kembali</a>
+        <div class="flex h-full justify-between items-center flex-col mx-auto w-full relative px-6">
+          <img src="../assets/image/logokampus.png" alt="" class="mx-auto" />
+          <img src="../assets/image/logo.png" alt="" class="mx-auto w-30 h-30 lg:w-52 lg:h-52" />
           <div
-            class="flex h-full justify-between items-center flex-col mx-auto w-full relative px-6"
-          >
-            <img src="../assets/image/logokampus.png" alt="" class="mx-auto" />
-            <img
-              src="../assets/image/logo.png"
-              alt=""
-              class="mx-auto w-30 h-30 lg:w-52 lg:h-52"
-            />
-            <div
-              class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center"
-            >
-              <div
-                class="rounded-full p-2 w-10 h-10 font-bold bg-amber-400 absolute left-2"
-              >
-                1
-              </div>
-              <span class="uppercase font-semibold"
-                >Sifat - sifat persegi Panjang</span
-              >
+            class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center">
+            <div class="rounded-full p-2 w-10 h-10 font-bold bg-amber-400 absolute left-2">
+              1
             </div>
+            <span class="uppercase font-semibold">Sifat - sifat persegi Panjang</span>
           </div>
         </div>
       </div>
-    </section>
-    <section
-      class="w-full min-h-[100vh] h-full bg-[url('./image/bgbody.png')] bg-amber-500 bg-no-repeat bg-cover bg-center"
-    >
-      <div class="bg-white/80 py-10">
-        <div
-          class="max-w-[850px] w-full mx-auto bg-no-repeat bg-cover px-3 pt-5"
-        >
-          <div
-            class="flex flex-col gap-5 relative bg-white px-3 py-4 rounded-xl"
-          >
-            <!-- isi -->
-            <div class="text-center">
-              <h1 class="text-2xl font-semibold">Ayo, kita Belajar</h1>
-              <p>Mengenai sifat-sifat persegi panjang</p>
-              <img
-                src="../assets/image/card2.png"
-                alt=""
-                class="w-max py-4 mx-auto"
-              />
+    </div>
+  </section>
+
+  <section
+    class="w-full min-h-[100vh] h-full bg-[url('./image/bgbody.png')] bg-amber-500 bg-no-repeat bg-cover bg-center">
+    <div class="bg-white/80 py-10">
+      <div class="max-w-[850px] w-full mx-auto bg-no-repeat bg-cover px-3 pt-5">
+        <div class="flex flex-col gap-5 relative bg-white px-3 py-4 rounded-xl">
+          <!-- isi -->
+          <div class="text-center">
+            <h1 class="text-2xl font-semibold">Ayo, kita Belajar</h1>
+            <p>Mengenai sifat-sifat persegi panjang</p>
+            <img src="../assets/image/card2.png" alt="" class="w-max py-4 mx-auto" />
+          </div>
+
+          <section class="">
+            <div class="py-2 mx-auto text-center bg-[#FFB159]">
+              Mari Kita Belajar Bersama
             </div>
 
-            <section class="">
-              <div class="py-2 mx-auto text-center bg-[#FFB159]">
-                Mari Kita Belajar Bersama
+            <div class="swiper-container w-full overflow-hidden py-3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide flex flex-col text-center items-center">
+                  <img src="../assets/image/sifatPersegi/pintu.png" alt="Pintu"
+                    class="w-40 h-40 object-contain mx-auto" />
+                  <p class="mt-2">Pintu</p>
+                </div>
+                <div class="swiper-slide flex flex-col text-center items-center">
+                  <img src="../assets/image/sifatPersegi/lemari.png" alt="Lemari"
+                    class="w-40 h-40 object-contain mx-auto" />
+                  <p class="mt-2">Lemari</p>
+                </div>
+                <div class="swiper-slide flex flex-col text-center items-center">
+                  <img src="../assets/image/sifatPersegi/buku.png" alt="Buku Tulis"
+                    class="w-40 h-40 object-contain mx-auto" />
+                  <p class="mt-2">Buku Tulis</p>
+                </div>
+
+                <div class="swiper-slide flex flex-col text-center items-center">
+                  <img src="../assets/image/sifatPersegi/papantulis.png" alt="Buku Tulis"
+                    class="w-40 h-40 object-contain mx-auto" />
+                  <p class="mt-2">Papan Tulis</p>
+                </div>
               </div>
+            </div>
 
-              <div class="swiper-container w-full overflow-hidden py-3">
-                <div class="swiper-wrapper">
-                  <div
-                    class="swiper-slide flex flex-col text-center items-center"
-                  >
-                    <img
-                      src="../assets/image/sifatPersegi/pintu.png"
-                      alt="Pintu"
-                      class="w-40 h-40 object-contain mx-auto"
-                    />
-                    <p class="mt-2">Pintu</p>
-                  </div>
-                  <div
-                    class="swiper-slide flex flex-col text-center items-center"
-                  >
-                    <img
-                      src="../assets/image/sifatPersegi/lemari.png"
-                      alt="Lemari"
-                      class="w-40 h-40 object-contain mx-auto"
-                    />
-                    <p class="mt-2">Lemari</p>
-                  </div>
-                  <div
-                    class="swiper-slide flex flex-col text-center items-center"
-                  >
-                    <img
-                      src="../assets/image/sifatPersegi/buku.png"
-                      alt="Buku Tulis"
-                      class="w-40 h-40 object-contain mx-auto"
-                    />
-                    <p class="mt-2">Buku Tulis</p>
-                  </div>
+            <p class="mt-2 text-[#292929] text-justify">
+              Apakah kalian tahu, bentuk yang sering kita jumpai disekitar
+              kita, seperti meja, layar televisi, bahkan jendela, semuanya
+              berbentuk persegi panjang. Tahukan kalian bahwa persegi panjang
+              memiliki sifat-sifat khusus yang membuat berbeda dengan bentuk
+              lainnya.
+            </p>
 
-                  <div
-                    class="swiper-slide flex flex-col text-center items-center"
-                  >
-                    <img
-                      src="../assets/image/sifatPersegi/papantulis.png"
-                      alt="Buku Tulis"
-                      class="w-40 h-40 object-contain mx-auto"
-                    />
-                    <p class="mt-2">Papan Tulis</p>
-                  </div>
+            <p class="font-semibold mt-2 text-[#292929] text-justify">
+              Agar kalian lebih paham, mari kita belajar bersama-sama
+              mengetahui sifat- sifat persegi panjang.
+            </p>
+          </section>
+
+          <section class="">
+            <div class="py-2 mx-auto text-center bg-[#05DBED]">
+              Mari Kita Pahami Bersama
+            </div>
+
+            <div class="flex flex-col gap-2 mt-3">
+              <div class="">
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content1')">
+                  Sifat-Sifat Persegi Panjang
+                  <span>&#9662;</span>
+                </button>
+                <div id="content1" class="hidden py-3">
+                  <p class="mt-2 text-justify">
+                    Persegi panjang memiliki sifat-sifat khusus sehingga bisa
+                    membedakan dengan bangun datar yang lain.
+                  </p>
+                  <img src="../assets/image/sifatPersegi/sifat.png" alt="Ilustrasi Kebun"
+                    class="w-full h-40 object-contain rounded mt-2" />
+                  <p class="mt-2 text-justify">
+                    Dari gambar di atas diperoleh sifat-sifat persegi panjang,
+                    yaitu:
+                  </p>
+
+                  <p class="mt-2 ml-2 text-justify">
+                    a. Memiliki 4 buah sisi, yaitu sisi AB, BC, CD, dan AD.
+                    <br />
+                    b. Memiliki dua pasang sisi yang sejajar dan sama panjang,
+                    yaitu AB // CD dan BC // AD. <br />
+                    c. Memiliki 4 buah sudut yang berbentuk siku-siku atau
+                    besarnya 90°. <br />
+                    d. Memiliki 2 buah diagonal yang sama panjang dan
+                    berpotongan, yaitu AC dan BD. <br />
+                    e. Memiliki 2 simetri lipat dan simerti putar.
+                  </p>
                 </div>
               </div>
 
-              <p class="mt-2 text-[#292929] text-justify">
-                Apakah kalian tahu, bentuk yang sering kita jumpai disekitar
-                kita, seperti meja, layar televisi, bahkan jendela, semuanya
-                berbentuk persegi panjang. Tahukan kalian bahwa persegi panjang
-                memiliki sifat-sifat khusus yang membuat berbeda dengan bentuk
-                lainnya.
-              </p>
-
-              <p class="font-semibold mt-2 text-[#292929] text-justify">
-                Agar kalian lebih paham, mari kita belajar bersama-sama
-                mengetahui sifat- sifat persegi panjang.
-              </p>
-            </section>
-
-            <section class="">
-              <div class="py-2 mx-auto text-center bg-[#05DBED]">
-                Mari Kita Pahami Bersama
-              </div>
-
-              <div class="flex flex-col gap-2 mt-3">
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content1')"
-                  >
-                    Sifat-Sifat Persegi Panjang
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content1" class="hidden py-3">
-                    <p class="mt-2 text-justify">
-                      Persegi panjang memiliki sifat-sifat khusus sehingga bisa
-                      membedakan dengan bangun datar yang lain.
-                    </p>
-                    <img
-                      src="../assets/image/sifatPersegi/sifat.png"
-                      alt="Ilustrasi Kebun"
-                      class="w-full h-40 object-contain rounded mt-2"
-                    />
-                    <p class="mt-2 text-justify">
-                      Dari gambar di atas diperoleh sifat-sifat persegi panjang,
-                      yaitu:
-                    </p>
-
-                    <p class="mt-2 ml-2 text-justify">
-                      a. Memiliki 4 buah sisi, yaitu sisi AB, BC, CD, dan AD.
-                      <br />
-                      b. Memiliki dua pasang sisi yang sejajar dan sama panjang,
-                      yaitu AB // CD dan BC // AD. <br />
-                      c. Memiliki 4 buah sudut yang berbentuk siku-siku atau
-                      besarnya 90°. <br />
-                      d. Memiliki 2 buah diagonal yang sama panjang dan
-                      berpotongan, yaitu AC dan BD. <br />
-                      e. Memiliki 2 simetri lipat dan simerti putar.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content2')"
-                  >
-                    Video Pembelajaran
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content2" class="hidden py-3">
-                    <iframe
-                      width="100%"
-                      class="h-[180px] lg:h-[300px]"
-                      src="https://www.youtube.com/embed/inxpoH1veGM?si=jgjMT8FTlvoRGwv8"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+              <div class="">
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content2')">
+                  Video Pembelajaran
+                  <span>&#9662;</span>
+                </button>
+                <div id="content2" class="hidden py-3">
+                  <iframe width="100%" class="h-[180px] lg:h-[300px]"
+                    src="https://www.youtube.com/embed/inxpoH1veGM?si=jgjMT8FTlvoRGwv8" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
               </div>
-            </section>
-          </div>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script>
-      function toggleContent(id) {
-        document.querySelectorAll("[id^=content]").forEach((el) => {
-          if (el.id === id) {
-            if (el.classList.contains("hidden")) {
-              el.classList.remove("hidden");
-              el.classList.add("slide-down");
-            } else {
-              el.classList.add("hidden");
-              el.classList.remove("slide-down");
-            }
+  <script>
+    function toggleContent(id) {
+      document.querySelectorAll("[id^=content]").forEach((el) => {
+        if (el.id === id) {
+          if (el.classList.contains("hidden")) {
+            el.classList.remove("hidden");
+            el.classList.add("slide-down");
           } else {
             el.classList.add("hidden");
             el.classList.remove("slide-down");
           }
-        });
-      }
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 2,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+        } else {
+          el.classList.add("hidden");
+          el.classList.remove("slide-down");
+        }
       });
-    </script>
-  </body>
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
 </html>
