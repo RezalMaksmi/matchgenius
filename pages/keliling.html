@@ -1,728 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- style -->
-    <link rel="stylesheet" href="../assets/output.css" />
-    <!-- icons -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
 
-    <style>
-      .hidden {
-        display: none;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- style -->
+  <link rel="stylesheet" href="../assets/output.css" />
+  <!-- icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    .slide-down {
+      animation: slideDown 0.3s ease-out forwards;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
       }
-      .slide-down {
-        animation: slideDown 0.3s ease-out forwards;
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      @keyframes slideDown {
-        from {
-          opacity: 0;
-          transform: translateY(-10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
-  </head>
-  <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+    }
+  </style>
+</head>
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
  -->
-  <body>
-    <section
-      class="w-full bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom"
-    >
-      <div class="bg-white/60">
-        <div
-          class="max-w-[850px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[200px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom relative"
-        >
-          <a
-            href="../index.html"
-            class="bg-[#E8F8FF] text-[#017EB9] border-2 border-[#017EB9] flex justify-center items-center lg:text-base text-sm px-5 py-1 w-max absolute top-3 left-3 z-30 rounded-full"
-            >Kembali</a
-          >
+
+<body>
+  <section class="w-full bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom">
+    <div class="bg-white/60">
+      <div
+        class="max-w-[850px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[200px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom relative">
+        <a href="../index.html"
+          class="bg-[#E8F8FF] text-[#017EB9] border-2 border-[#017EB9] flex justify-center items-center lg:text-base text-sm px-5 py-1 w-max absolute top-3 left-3 z-30 rounded-full">Kembali</a>
+        <div class="flex h-full justify-between items-center flex-col mx-auto w-full relative px-6">
+          <img src="../assets/image/logokampus.png" alt="" class="mx-auto" />
+          <img src="../assets/image/logo.png" alt="" class="mx-auto w-30 h-30 lg:w-52 lg:h-52" />
           <div
-            class="flex h-full justify-between items-center flex-col mx-auto w-full relative px-6"
-          >
-            <img src="../assets/image/logokampus.png" alt="" class="mx-auto" />
-            <img
-              src="../assets/image/logo.png"
-              alt=""
-              class="mx-auto w-30 h-30 lg:w-52 lg:h-52"
-            />
-            <div
-              class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center"
-            >
-              <div
-                class="rounded-full p-2 w-10 h-10 font-bold bg-amber-400 absolute left-2"
-              >
-                3
-              </div>
-              <span class="uppercase font-semibold"
-                >KELILING PERSEGI PANJANG</span
-              >
+            class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center">
+            <div class="rounded-full p-2 w-10 h-10 font-bold bg-amber-400 absolute left-2">
+              3
             </div>
+            <span class="uppercase font-semibold">KELILING PERSEGI PANJANG</span>
           </div>
         </div>
       </div>
-    </section>
-    <section
-      class="w-full min-h-[100vh] h-full bg-[url('./image/bgbody.png')] bg-amber-500 bg-no-repeat bg-cover bg-center"
-    >
-      <div class="bg-white/80 py-10">
-        <div
-          class="max-w-[850px] w-full mx-auto bg-no-repeat bg-cover px-3 pt-5"
-        >
-          <div
-            class="flex flex-col gap-5 relative bg-white px-3 py-4 rounded-xl"
-          >
-            <!-- isi -->
-            <div class="text-center">
-              <h1 class="text-2xl font-semibold">Ayo, Kita Belajar</h1>
-              <p>Mengenai Keliling persegi panjang</p>
-              <img
-                src="../assets/image/card4.png"
-                alt=""
-                class="w-max py-4 mx-auto"
-              />
+    </div>
+  </section>
+  <section
+    class="w-full min-h-[100vh] h-full bg-[url('./image/bgbody.png')] bg-amber-500 bg-no-repeat bg-cover bg-center">
+    <div class="bg-white/80 py-10">
+      <div class="max-w-[850px] w-full mx-auto bg-no-repeat bg-cover px-3 pt-5">
+        <div class="flex flex-col gap-5 relative bg-white px-3 py-4 rounded-xl">
+          <!-- isi -->
+          <div class="text-center">
+            <h1 class="text-2xl font-semibold">Ayo, Kita Belajar</h1>
+            <p>Mengenai Keliling persegi panjang</p>
+            <img src="../assets/image/card4.png" alt="" class="w-max py-4 mx-auto" />
+          </div>
+
+          <section class="">
+            <div class="py-2 mx-auto text-center bg-[#FFB159]">
+              Mari kita Belajar Bersama !
             </div>
 
-            <section class="">
-              <div class="py-2 mx-auto text-center bg-[#FFB159]">
-                Mari kita Belajar Bersama
+            <div class="flex flex-col gap-2 mt-3">
+              <div class="">
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content1')">
+                  Keliling Persegi Panjang
+                  <span>&#9662;</span>
+                </button>
+                <div id="content1" class="hidden py-3">
+                  <p class="mt-2 text-justify">
+                    Keliling persegi panjang adalah jumlah panjang semua sisi-sisinya, atau dua kali jumlah panjang
+                    ditambah lebar.
+                  </p>
+                  <img src="../assets/image/luasPersegi/luasPersegiPanjang.png" alt="Luas Persegi Panjang"
+                    class="w-full h-40 object-contain rounded mt-2" />
+                  <img src="../assets/image/kelilingPersegi/image.png" alt="Luas Persegi Panjang"
+                    class="w-full h-40 object-contain rounded mt-3" />
+
+                  <p class="font-semibold">Keterangan :</p>
+                  <p class="pl-10 font-semibold">
+                    K = keliling <br />
+                    p = panjang <br />
+                    l = lebar
+                  </p>
+                </div>
               </div>
 
-              <div class="flex flex-col gap-2 mt-3">
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content1')"
-                  >
-                    Keliling Persegi Panjang
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content1" class="hidden py-3">
-                    <p class="mt-2 text-justify">
-                      Keliling persegi panjang adalah jumlah panjang keempat
-                      sisinya.
-                    </p>
-                    <img
-                      src="../assets/image/luasPersegi/luasPersegiPanjang.png"
-                      alt="Luas Persegi Panjang"
-                      class="w-full h-40 object-contain rounded mt-2"
-                    />
-                  </div>
-                </div>
 
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content2')"
-                  >
-                    Rumus Keliling Persegi Panjang
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content2" class="hidden py-3">
-                    <p class="mt-2 text-justify">
-                      Persegi panjang dibawah mempunyai sisi AB, BC, CD dan AD.
-                      Keliling persegi panjang ABCD adalah jumlah dari panjang
-                      semua sisinya yaitu AB+CD+AD+BC
-                      <br />Dengan memisalkan :
-                    </p>
-                    <img
-                      src="../assets/image/kelilingPersegi/rumus1.png"
-                      alt="Luas Persegi Panjang"
-                      class="lg:max-w-[250px] w-[180px] lg:h-max h-auto object-contain rounded mt-3"
-                    />
-                    <p class="font-semibold mt-3">
-                      Maka rumus keliling persegi panjang :
-                    </p>
-                    <img
-                      src="../assets/image/kelilingPersegi/rumus2.png"
-                      alt="Luas Persegi Panjang"
-                      class="w-auto h-auto object-contain rounded mt-3 mx-auto"
-                    />
-
-                    <img
-                      src="../assets/image/kelilingPersegi/rumus.png"
-                      alt="Luas Persegi Panjang"
-                      class="w-full h-40 object-contain rounded mt-2 mx-auto"
-                    />
-                    <p class="font-semibold">Keterangan :</p>
-                    <p class="pl-10 font-semibold">
-                      K = keliling <br />
-                      p = panjang <br />
-                      l = lebar
-                    </p>
-                  </div>
-                </div>
-                <!-- npx @tailwindcss/cli -i ./assets/input.css -o ./assets/output.css --watch
+              <!-- npx @tailwindcss/cli -i ./assets/input.css -o ./assets/output.css --watch
  -->
 
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content3')"
-                  >
-                    Video Pembelajaran
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content3" class="hidden py-3">
-                    <iframe
-                      width="100%"
-                      class="h-[180px] lg:h-[300px]"
-                      src="https://www.youtube.com/embed/KtU9Fa-iT2I?si=vzdrMPupXc1V4PnY"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
+              <div class="">
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content3')">
+                  Video Pembelajaran
+                  <span>&#9662;</span>
+                </button>
+                <div id="content3" class="hidden py-3">
+                  <iframe width="100%" class="h-[180px] lg:h-[300px]"
+                    src="https://www.youtube.com/embed/KtU9Fa-iT2I?si=vzdrMPupXc1V4PnY" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            <!--  Ayo Berdiskusi -->
+            <div class="flex flex-col gap-2 mt-3">
+              <div class="py-2 mx-auto text-center w-full bg-[#FDDC01]">
+                Mari Kita Berdiskusi Bersama !
+              </div>
+
+              <div class="flex gap-1 rounded-full bg-[#027FBA] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                <img src="../assets/image/iconstulis.svg" alt="" />
+
+                <span class="w-max">Ayo diskusikan bersama temanmu </span>
+              </div>
+              1. Buatlah kelompok yang terdiri atas 9 kelompok ! <br>
+              2. Tuliskan nama dan nomor absen setiap anggota !<br>
+              3. Siapkan buku tulis untuk menjawab soal yang sudah disiapkan !<br>
+              4. Kerjakan semua soal yang ada !
+              </span>
+
+              <div class="mt-3">
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content4')">
+                  Latihan Soal
+                  <span>&#9662;</span>
+                </button>
+                <div id="content4" class="hidden py-3">
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <p class="mt-2 text-[#292929] text-justify">
+                      1. Kebun Pak Mandra berbentuk persegi panjang berukuran panjang 60 m dan lebar 35 m. Di sekeliling
+                      kebun akan dipasang pagar dengan biaya Rp.150.000 per meter.
+                    </p>
+
+                    <img src="../assets/image/kelilingPersegi/CANVA_page-0004.jpg" alt="ibu tani disawah"
+                      class="my-3 mx-auto" />
+
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">AYO KITA CARI TAHU</span>
+                    </div>
+                    <p class="mt-2 text-[#292929]">a) Berapa biaya yang diperlukan untuk pemasangan pagar tersebut ?
+                    </p>
                   </div>
+
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <p class="mt-2 text-[#292929] text-justify">
+                      2. Andi berlari mengelilingi sebuah lapangan yang berukuran 40 m x 15 m. Jika Andi mengelilingi
+                      lapangan tersebut sebanyak 5 kali.
+                    </p>
+
+                    <img src="../assets/image/kelilingPersegi/CANVA_page-0005.jpg" alt="ibu tani disawah"
+                      class="my-3 mx-auto" />
+
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">AYO KITA CARI TAHU</span>
+                    </div>
+                    <p class="mt-2 text-[#292929]">a) Berapa jarak yang Andi tempuh untuk mengelilingi lapangan ?
+                    </p>
+                  </div>
+
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <p class="mt-2 text-[#292929] text-justify">
+                      3. Disebuah taman berbentuk persegi panjang, panjang taman 30 m dan lebarnya 20 m. Pak Budi ingin
+                      memasang pagar keliling taman tersebut. Pak Budi ingin mengetahui total panjang pagar yang
+                      dibutuhkan untuk mengelilingi taman tersebut.
+                    </p>
+
+                    <img src="../assets/image/kelilingPersegi/CANVA_page-0006.jpg" alt="ibu tani disawah"
+                      class="my-3 mx-auto" />
+
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">AYO KITA CARI TAHU</span>
+                    </div>
+                    <p class="mt-2 text-[#292929]">
+                      a) Hitunglah keliling taman tersebut ? <br>
+                      b) Apa yang akan terjadi jika panjang taman bertambah 10 m, dan lebar taman tetap sama ? Berapakah
+                      kelilingnya sekarang ?
+
+
+                    </p>
+                  </div>
+
                 </div>
               </div>
 
-              <!--  Ayo Berdiskusi -->
-              <div class="flex flex-col gap-2 mt-3">
-                <div class="py-2 mx-auto text-center w-full bg-[#FDDC01]">
-                  Mari Kita Berdiskusi Bersama
-                </div>
-
-                <div
-                  class="flex gap-1 rounded-full bg-[#027FBA] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                >
-                  <img src="../assets/image/iconstulis.svg" alt="" />
-
-                  <span class="w-max">Ayo diskusikan bersama temanmu</span>
-                </div>
-                <span>
-                  1. Buatlah kelompok yang terdiri atas 9 kelompok ! <br />
-                  2. Tuliskan nama dan nomor absen setiap anggota. <br />
-                  3. Siapkan buku tulis untuk menjawab soal yang sudah
-                  disiapkan.</span
-                >
-
-                <!-- <div class="mt-3">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content4')"
-                  >
-                    Soal Level 1
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content4" class="hidden py-3">
-                    <img
-                      src="../assets/image/kelilingPersegi/soal1.png"
-                      alt="ibu tani disawah"
-                      class="my-3 mx-auto"
-                    />
-                    <p class="mt-2 ml-2 text-[#292929]">
-                      Dinda sedang membantu ayahnya untuk membuat pagar di
-                      sekitar kebun milik keluarganya. Ayah Dinda memberi tugas
-                      untuk menghitung keliling kebun yang berbentuk persegi
-                      panjang. Kebun tersebut memiliki panjang 30 meter dan
-                      lebar 12 meter. Dinda ingin memastikan bahwa pagar yang
-                      dibeli cukup untuk mengelilingi kebun tersebut, sehingga
-                      ia harus menghitung kelilingnya terlebih dahulu.
-                      <br />
-                      <br />
-                      <b> PERTANYAAN : </b>
-                      <br />
-                      Hitunglah keliling kebun yang berbentuk persegi panjang
-                      tersebut!
-                    </p>
-                  </div>
-                </div>
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content5')"
-                  >
-                    Soal Level 2
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content5" class="hidden py-3">
-                    <img
-                      src="../assets/image/kelilingPersegi/soal2.png"
-                      alt="ibu tani disawah"
-                      class="my-3 mx-auto"
-                    />
-                    <p class="mt-2 ml-2 text-[#292929]">
-                      Pak Budi sedang membuat pagar di sekitar kebunnya yang
-                      berbentuk persegi panjang. Kebun Pak Budi memiliki panjang
-                      12 meter dan lebar 8 meter. Ia ingin menghitung panjang
-                      pagar yang diperlukan untuk mengelilingi kebun tersebut.
-                      <br />
-                      <br />
-                      <b> PERTANYAAN : </b>
-                    </p>
-                    <p class="mt-2 ml-4 text-[#292929]">
-                      1.     Berapa panjang pagar yang diperlukan Pak Budi untuk
-                      mengelilingi kebun tersebut? <br />
-                      2.     Jika harga 1 meter pagar adalah Rp 25.000,00,
-                      berapa biaya yang harus dikeluarkan Pak Budi untuk membeli
-                      pagar?
-                    </p>
-                  </div>
-                </div>
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content6')"
-                  >
-                    Soal Level 3
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content6" class="hidden py-3">
-                    <img
-                      src="../assets/image/kelilingPersegi/soal3.png"
-                      alt="ibu tani disawah"
-                      class="my-3 mx-auto"
-                    />
-                    <p class="mt-2 ml-2 text-[#292929]">
-                      Di sebuah taman yang berbentuk persegi panjang, panjang
-                      taman tersebut adalah 30 meter dan lebarnya 20 meter. Pak
-                      Budi ingin memasang pagar keliling taman tersebut. Ia
-                      ingin mengetahui total panjang pagar yang dibutuhkan untuk
-                      mengelilingi taman tersebut. <br />
-                      <br />
-                      <b> PERTANYAAN : </b>
-                    </p>
-                    <p class="mt-2 ml-4 text-[#292929]">
-                      1. Hitunglah keliling taman tersebut. <br />
-                      2. Apa yang akan terjadi jika panjang taman bertambah 10
-                      meter, tetapi lebar taman tetap sama? Berapa kelilingnya
-                      sekarang?
-                    </p>
-                  </div>
-                </div> -->
-
-                <div class="mt-3">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content4')"
-                  >
-                    Soal Level 1
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content4" class="hidden py-3">
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Orientasi siswa terhadap masalah
-                      </div>
-
-                      <p class="mt-2 text-[#292929]">
-                        Bacalah cerita berikut dengan cermat dan teliti!
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/image/kelilingPersegi/soal1.png"
-                      alt="ibu tani disawah"
-                      class="my-3 mx-auto w-full"
-                    />
-                    <p class="mt-2 mx-2 text-[#292929] text-justify">
-                      Dinda sedang membantu ayahnya untuk membuat pagar di
-                      sekitar kebun milik keluarganya. Ayah Dinda memberi tugas
-                      untuk menghitung keliling kebun yang berbentuk persegi
-                      panjang. Kebun tersebut memiliki panjang 30 meter dan
-                      lebar 12 meter.
-                    </p>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengorganisasi siswa untuk belajar
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo diskusikan bersama temanmu</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Hari ini kita akan menyelesaikan soal keliling persegi
-                        panjang melalui permasalahan yang telah disajikan di
-                        atas. Selanjutnya kalian akan mengerjakan soal secara
-                        berkelompok.
-                      </p>
-                    </div>
-
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Membimbing penyelidikan individu/kelompok
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max">Ayo kita mencari tahu</span>
-                      </div>
-                      <p class="mt-2 text-[#292929]">
-                        1. Hitunglah keliling kebun yang berbentuk persegi
-                        panjang tersebut!
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengembangkan dan menyajikan hasil karya
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo presentasikan di depan kelas</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Jika sudah selesai berdiskusi, setiap perwakilan
-                        kelompok maju untuk mempresentasikan hasil kerja
-                        kelompokmu bersama anggota kelompok yang lain.
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Menganalisis dan mengevaluasi proses pemecahan masalah
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Selamat kalian telah berhasil belajar materi persegi
-                        panjang dengan baik. Nah, untuk mengukur kemampuan
-                        kalian dalam memahami materi ini, cobalah kalian
-                        mengerjakan soal evaluasi di bawah ini dengan benar dan
-                        tepat ya..
-                      </p>
-
-                      <div
-                        class="flex flex-row gap-2 justify-center items-center text-center mx-auto mt-4 font-semibold"
-                      >
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                        Selamat Mengerjakan
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content5')"
-                  >
-                    Soal Level 2
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content5" class="hidden py-3">
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Orientasi siswa terhadap masalah
-                      </div>
-
-                      <p class="mt-2 text-[#292929]">
-                        Bacalah cerita berikut dengan cermat dan teliti
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/image/kelilingPersegi/soal2.png"
-                      alt="ibu tani disawah"
-                      class="my-3 mx-auto w-full"
-                    />
-                    <p class="mt-2 ml-2 text-[#292929] text-justify">
-                      Pak Budi sedang membuat pagar di sekitar kebunnya yang
-                      berbentuk persegi panjang. Kebun Pak Budi memiliki panjang
-                      12 meter dan lebar 8 meter. Ia ingin menghitung panjang
-                      pagar yang diperlukan untuk mengelilingi kebun tersebut.
-                    </p>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengorganisasi siswa untuk belajar
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo diskusikan bersama temanmu</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Hari ini kita akan menyelesaikan soal luas persegi
-                        panjang melalui permasalahan yang telah disajikan di
-                        atas. Selanjutnya kalian akan mengerjakan soal secara
-                        berkelompok.
-                      </p>
-                    </div>
-
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Membimbing penyelidikan individu/kelompok
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max">Ayo kita mencari tahu</span>
-                      </div>
-                      <p class="mt-2 text-[#292929]">
-                        1. Berapa panjang pagar yang diperlukan Pak Budi untuk
-                        mengelilingi kebun tersebut? <br />
-                        2. Jika harga 1 meter pagar adalah Rp 25.000,00, berapa
-                        biaya yang harus dikeluarkan Pak Budi untuk membeli
-                        pagar?
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengembangkan dan menyajikan hasil karya
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo presentasikan di depan kelas</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Jika sudah selesai berdiskusi, setiap perwakilan
-                        kelompok maju untuk mempresentasikan hasil kerja
-                        kelompokmu bersama anggota kelompok yang lain.
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Menganalisis dan mengevaluasi proses pemecahan masalah
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Selamat kalian telah berhasil belajar materi persegi
-                        panjang dengan baik. Nah, untuk mengukur kemampuan
-                        kalian dalam memahami materi ini, cobalah kalian
-                        mengerjakan soal evaluasi di bawah ini dengan benar dan
-                        tepat ya..
-                      </p>
-
-                      <div
-                        class="flex flex-row gap-2 justify-center items-center text-center mx-auto mt-4 font-semibold"
-                      >
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                        Selamat Mengerjakan
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div>
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content6')"
-                  >
-                    Soal Level 3
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content6" class="hidden py-3">
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Orientasi siswa terhadap masalah
-                      </div>
-
-                      <p class="mt-2 text-[#292929]">
-                        Bacalah cerita berikut dengan cermat dan teliti
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/image/kelilingPersegi/soal3.png"
-                      alt="Pak agus memiliki taman berbentuk persegi panjang"
-                      class="my-3 mx-auto w-full"
-                    />
-                    <p class="mt-2 mx-2 text-[#292929] text-justify">
-                      Di sebuah taman yang berbentuk persegi panjang, panjang
-                      taman tersebut adalah 30 meter dan lebarnya 20 meter. Pak
-                      Budi ingin memasang pagar keliling taman tersebut. Ia
-                      ingin mengetahui total panjang pagar yang dibutuhkan untuk
-                      mengelilingi taman tersebut.
-                    </p>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengorganisasi siswa untuk belajar
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo diskusikan bersama temanmu</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Hari ini kita akan menyelesaikan soal luas persegi
-                        panjang melalui permasalahan yang telah disajikan di
-                        atas. Selanjutnya kalian akan mengerjakan soal secara
-                        berkelompok.
-                      </p>
-                    </div>
-
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Membimbing penyelidikan individu/kelompok
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max">Ayo kita mencari tahu</span>
-                      </div>
-                      <p class="mt-2 text-[#292929]">
-                        1. Hitunglah keliling taman tersebut ? <br />
-                        2. Apa yang akan terjadi jika panjang taman bertambah 10
-                        meter, tetapi lebar taman tetap sama? Berapa kelilingnya
-                        sekarang?
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengembangkan dan menyajikan hasil karya
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo presentasikan di depan kelas</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Jika sudah selesai berdiskusi, setiap perwakilan
-                        kelompok maju untuk mempresentasikan hasil kerja
-                        kelompokmu bersama anggota kelompok yang lain.
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Menganalisis dan mengevaluasi proses pemecahan masalah
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Selamat kalian telah berhasil belajar materi persegi
-                        panjang dengan baik. Nah, untuk mengukur kemampuan
-                        kalian dalam memahami materi ini, cobalah kalian
-                        mengerjakan soal evaluasi di bawah ini dengan benar dan
-                        tepat ya..
-                      </p>
-
-                      <div
-                        class="flex flex-row gap-2 justify-center items-center text-center mx-auto mt-4 font-semibold"
-                      >
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                        Selamat Mengerjakan
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <a
-                  href="https://drive.google.com/file/d/1fPV3HjQRLpuzBxvj6-GtWAWGsAGs70Lj/view?usp=sharing"
-                  target="_blank"
-                  class="border border-[#017EB9] rounded-lg w-full text-left bg-[#d4f5fd] text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                >
-                  Soal Evaluasi
-                </a>
-              </div>
-            </section>
-          </div>
+              <a href="https://drive.google.com/file/d/1fPV3HjQRLpuzBxvj6-GtWAWGsAGs70Lj/view?usp=sharing"
+                target="_blank"
+                class="border border-[#017EB9] rounded-lg w-full text-left bg-[#d4f5fd] text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center">
+                Soal Evaluasi
+              </a>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script>
-      function toggleContent(id) {
-        document.querySelectorAll("[id^=content]").forEach((el) => {
-          if (el.id === id) {
-            if (el.classList.contains("hidden")) {
-              el.classList.remove("hidden");
-              el.classList.add("slide-down");
-            } else {
-              el.classList.add("hidden");
-              el.classList.remove("slide-down");
-            }
+  <script>
+    function toggleContent(id) {
+      document.querySelectorAll("[id^=content]").forEach((el) => {
+        if (el.id === id) {
+          if (el.classList.contains("hidden")) {
+            el.classList.remove("hidden");
+            el.classList.add("slide-down");
           } else {
             el.classList.add("hidden");
             el.classList.remove("slide-down");
           }
-        });
-      }
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 2,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+        } else {
+          el.classList.add("hidden");
+          el.classList.remove("slide-down");
+        }
       });
-    </script>
-  </body>
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
 </html>

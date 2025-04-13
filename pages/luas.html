@@ -1,448 +1,315 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- style -->
-    <link rel="stylesheet" href="../assets/output.css" />
-    <!-- icons -->
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-    />
 
-    <style>
-      .hidden {
-        display: none;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- style -->
+  <link rel="stylesheet" href="../assets/output.css" />
+  <!-- icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <style>
+    .hidden {
+      display: none;
+    }
+
+    .slide-down {
+      animation: slideDown 0.3s ease-out forwards;
+    }
+
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
       }
-      .slide-down {
-        animation: slideDown 0.3s ease-out forwards;
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
       }
-      @keyframes slideDown {
-        from {
-          opacity: 0;
-          transform: translateY(-10px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-    </style>
-  </head>
-  <!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
+    }
+  </style>
+</head>
+<!-- npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
  -->
-  <body>
-    <section
-      class="w-full bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom"
-    >
-      <div class="bg-white/60">
-        <div
-          class="max-w-[850px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[200px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom relative"
-        >
-          <a
-            href="../index.html"
-            class="bg-[#E8F8FF] text-[#017EB9] border-2 border-[#017EB9] flex justify-center items-center lg:text-base text-sm px-5 py-1 w-max absolute top-3 left-3 z-30 rounded-full"
-            >Kembali</a
-          >
+
+<body>
+  <section class="w-full bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom">
+    <div class="bg-white/60">
+      <div
+        class="max-w-[850px] w-full mx-auto bg-slate-500 lg:h-[400px] h-[200px] bg-[url('./image/navbar.png')] bg-no-repeat bg-cover bg-bottom relative">
+        <a href="../index.html"
+          class="bg-[#E8F8FF] text-[#017EB9] border-2 border-[#017EB9] flex justify-center items-center lg:text-base text-sm px-5 py-1 w-max absolute top-3 left-3 z-30 rounded-full">Kembali</a>
+        <div class="flex h-full justify-between items-center flex-col mx-auto w-full relative px-6">
+          <img src="../assets/image/logokampus.png" alt="" class="mx-auto" />
+          <img src="../assets/image/logo.png" alt="" class="mx-auto w-30 h-30 lg:w-52 lg:h-52" />
           <div
-            class="flex h-full justify-between items-center flex-col mx-auto w-full relative px-6"
-          >
-            <img src="../assets/image/logokampus.png" alt="" class="mx-auto" />
-            <img
-              src="../assets/image/logo.png"
-              alt=""
-              class="mx-auto w-30 h-30 lg:w-52 lg:h-52"
-            />
-            <div
-              class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center"
-            >
-              <div
-                class="rounded-full p-2 w-10 h-10 font-bold bg-amber-400 absolute left-2"
-              >
-                2
-              </div>
-              <span class="uppercase font-semibold">Luas Persegi Panjang</span>
+            class="bg-white rounded-full px-3 py-3 relative top-6 shadow text-center max-w-[500px] w-full flex flex-row justify-center items-center">
+            <div class="rounded-full p-2 w-10 h-10 font-bold bg-amber-400 absolute left-2">
+              2
             </div>
+            <span class="uppercase font-semibold">Luas Persegi Panjang</span>
           </div>
         </div>
       </div>
-    </section>
-    <section
-      class="w-full min-h-[100vh] h-full bg-[url('./image/bgbody.png')] bg-amber-500 bg-no-repeat bg-cover bg-center"
-    >
-      <div class="bg-white/80 py-10">
-        <div
-          class="max-w-[850px] w-full mx-auto bg-no-repeat bg-cover px-3 pt-5"
-        >
-          <div
-            class="flex flex-col gap-5 relative bg-white px-3 py-4 rounded-xl"
-          >
-            <!-- isi -->
-            <div class="text-center">
-              <h1 class="text-2xl font-semibold">Ayo, Kita Belajar</h1>
-              <p>Mengenai luas persegi panjang</p>
-              <img
-                src="../assets/image/card3.png"
-                alt=""
-                class="w-max py-4 mx-auto"
-              />
+    </div>
+  </section>
+  <section
+    class="w-full min-h-[100vh] h-full bg-[url('./image/bgbody.png')] bg-amber-500 bg-no-repeat bg-cover bg-center">
+    <div class="bg-white/80 py-10">
+      <div class="max-w-[850px] w-full mx-auto bg-no-repeat bg-cover px-3 pt-5">
+        <div class="flex flex-col gap-5 relative bg-white px-3 py-4 rounded-xl">
+          <!-- isi -->
+          <div class="text-center">
+            <h1 class="text-2xl font-semibold">Ayo, Kita Belajar</h1>
+            <p>Mengenai luas persegi panjang</p>
+            <img src="../assets/image/card3.png" alt="" class="w-max py-4 mx-auto" />
+          </div>
+
+          <section class="">
+            <div class="py-2 mx-auto text-center bg-[#FFB159]">
+              Mari Kita Belajar Bersama !
             </div>
 
-            <section class="">
-              <div class="py-2 mx-auto text-center bg-[#FFB159]">
-                Mari Kita Belajar Bersama
-              </div>
+            <div class="flex flex-col gap-2 mt-3">
+              <div class="">
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content1')">
+                  Luas Persegi Panjang
+                  <span>&#9662;</span>
+                </button>
+                <div id="content1" class="hidden py-3">
+                  <p class="mt-2 text-justify">
+                    Luas persegi panjang adalah luas seluruh permukaan bangun datar persegi panjang. Luas persegi
+                    panjang dapat dihitung dengan mengalikan panjang dan lebarnya.
+                  </p>
+                  <img src="../assets/image/luasPersegi/image1.png" alt="Luas Persegi Panjang"
+                    class="w-full h-50 object-contain rounded mt-3" />
+                  <img src="../assets/image/luasPersegi/rumusluas.png" alt="Luas Persegi Panjang"
+                    class="w-full h-30 object-contain rounded mt-3" />
 
-              <div class="flex flex-col gap-2 mt-3">
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content1')"
-                  >
-                    Luas Persegi Panjang
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content1" class="hidden py-3">
-                    <p class="mt-2 text-justify">
-                      Luas persegi panjang merupakan luas daerah dalam yang
-                      dibatasi oleh persegi panjang.
-                    </p>
-                    <img
-                      src="../assets/image/luasPersegi/luasPersegiPanjang.png"
-                      alt="Luas Persegi Panjang"
-                      class="w-full h-40 object-contain rounded mt-2"
-                    />
-                  </div>
-                </div>
-
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content2')"
-                  >
-                    Rumus Luas Persegi Panjang
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content2" class="hidden py-3">
-                    <p class="mt-2 text-justify">
-                      Persegi panjang dibawah mempunyai panjang
-                      <br />
-                      <img
-                        src="../assets/image/luasPersegi/mempunyai.png"
-                        alt=""
-                        class="mt-2"
-                      />
-                      <br />
-                      Maka rumus luas persegi panjang adalah :
-                    </p>
-                    <img
-                      src="../assets/image/luasPersegi/rumusluas.png"
-                      alt="Luas Persegi Panjang"
-                      class="w-full h-40 object-contain rounded mt-2"
-                    />
-                    <p class="font-semibold">Keterangan :</p>
-                    <p class="pl-10 font-semibold">
-                      K = keliling <br />
-                      p = panjang <br />
-                      l = lebar
-                    </p>
-                  </div>
-                </div>
-
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content3')"
-                  >
-                    Video Pembelajaran
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content3" class="hidden py-3">
-                    <iframe
-                      width="100%"
-                      class="h-[180px] lg:h-[300px]"
-                      src="https://www.youtube.com/embed/U1Dy-cwC7KE?si=qyYbmUUWmJmBpdLy"
-                      title="YouTube video player"
-                      frameborder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      referrerpolicy="strict-origin-when-cross-origin"
-                      allowfullscreen
-                    ></iframe>
-                  </div>
+                  <p class="font-semibold">Keterangan :</p>
+                  <p class="pl-10 font-semibold">
+                    K = keliling <br />
+                    p = panjang <br />
+                    l = lebar
+                  </p>
                 </div>
               </div>
 
-              <!--  Ayo Berdiskusi -->
-              <div class="flex flex-col gap-2 mt-3">
-                <div class="py-2 mx-auto text-center w-full bg-[#FDDC01]">
-                  Mari Kita Berdiskusi Bersama
+
+              <div class="">
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content3')">
+                  Video Pembelajaran
+                  <span>&#9662;</span>
+                </button>
+                <div id="content3" class="hidden py-3">
+                  <iframe width="100%" class="h-[180px] lg:h-[300px]"
+                    src="https://www.youtube.com/embed/U1Dy-cwC7KE?si=qyYbmUUWmJmBpdLy" title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                 </div>
+              </div>
+            </div>
 
-                <div
-                  class="flex gap-1 rounded-full bg-[#027FBA] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                >
-                  <img src="../assets/image/iconstulis.svg" alt="" />
+            <!--  Ayo Berdiskusi -->
+            <div class="flex flex-col gap-2 mt-3">
+              <div class="py-2 mx-auto text-center w-full bg-[#FDDC01]">
+                Mari Kita Berdiskusi Bersama !
+              </div>
 
-                  <span class="w-max">Ayo diskusikan bersama temanmu</span>
-                </div>
-                <span class="text-justify">
-                  1. Buatlah kelompok yang terdiri atas 9 kelompok ! <br />
-                  2. Tuliskan nama dan nomor absen setiap anggota. <br />
-                  3. Siapkan buku tulis untuk menjawab soal yang sudah
-                  disiapkan.</span
-                >
+              <div class="flex gap-1 rounded-full bg-[#027FBA] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                <img src="../assets/image/iconstulis.svg" alt="" />
 
-                <div class="mt-3">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content4')"
-                  >
-                    Soal Level 1
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content4" class="hidden py-3">
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Orientasi siswa terhadap masalah
-                      </div>
+                <span class="w-max">Ayo diskusikan bersama temanmu !</span>
+              </div>
+              <span class="text-justify">
+                1. Buatlah kelompok yang terdiri atas 9 kelompok ! <br>
+                2. Tuliskan nama dan nomor absen setiap anggota !<br>
+                3. Siapkan buku tulis untuk menjawab soal yang sudah disiapkan !<br>
+                4. Kerjakan semua soal yang ada !
+              </span>
 
-                      <p class="mt-2 text-[#292929]">
-                        Bacalah cerita berikut dengan cermat dan teliti!
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/image/luasPersegi/soal1.png"
-                      alt="ibu tani disawah"
-                      class="my-3 mx-auto"
-                    />
-                    <p class="mt-2 mx-2 text-[#292929] text-justify">
-                      Pak Budi memiliki sebidang tanah berbentuk persegi panjang
-                      yang akan digunakan untuk menanam sayuran. Panjang tanah
-                      tersebut adalah 12 meter, dan lebarnya 8 meter. Pak Budi
-                      ingin mengetahui luas tanahnya agar dapat mengetahui
-                      jumlah sayuran yang bisa ditanam.
+              <div class="mt-3">
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content4')">
+                  Latihan Soal
+                  <span>&#9662;</span>
+                </button>
+                <div id="content4" class="hidden py-3">
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <p class="mt-2 text-[#292929] text-justify">
+                      1. Ubin di rumah Naya berbentuk persegi panjang dengan ukuran 40 cm x 30 cm. Jika terdapat 700
+                      ubin, maka ubin tersebut dapat menutup lantai rumah Naya seluas........m2
                     </p>
 
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengorganisasi siswa untuk belajar
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
+                    <img src="../assets/image/luasPersegi/CANVA_page-0001.jpg" alt="ibu tani disawah"
+                      class="my-3 mx-auto" />
 
-                        <span class="w-max"
-                          >Ayo diskusikan bersama temanmu</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Hari ini kita akan menyelesaikan soal luas persegi
-                        panjang melalui permasalahan yang telah disajikan di
-                        atas. Selanjutnya kalian akan mengerjakan soal secara
-                        berkelompok.
-                      </p>
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">AYO KITA CARI TAHU</span>
+                    </div>
+                    <p class="mt-2 text-[#292929]">a) Berapa ubin yang dibutuhkan Naya untuk menutupi lantai rumahnya ?
+                    </p>
+                  </div>
+
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <p class="mt-2 text-[#292929] text-justify">
+                      2. Lantai ruangan tamu Bapak Bahtiar berbentuk persegi panjang dengan ukuran panjang 6 m dan lebar
+                      4 m. Jika lantai tersebut akan dipasangi keramik berukuran 25 cm x 25 cm.
+                    </p>
+
+                    <img src="../assets/image/luasPersegi/CANVA_page-0002.jpg" alt="ibu tani disawah"
+                      class="my-3 mx-auto" />
+
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">AYO KITA CARI TAHU</span>
+                    </div>
+                    <p class="mt-2 text-[#292929]">a) Berapa jumlah keramik yang dibutuhkan Bapak Bahtiar ?
+                    </p>
+                  </div>
+
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <p class="mt-2 text-[#292929] text-justify">
+                      3. Pak Agus memiliki sebuah taman berbentuk persegi panjang yang akan ditanami rumput. Panjang
+                      taman tersebut adalah 12 m, dan lebarnya 8 m. Kebun itu akan ditutupi rumput.
+                    </p>
+
+                    <img src="../assets/image/luasPersegi/CANVA_page-0003.jpg" alt="ibu tani disawah"
+                      class="my-3 mx-auto" />
+
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">AYO KITA CARI TAHU</span>
+                    </div>
+                    <p class="mt-2 text-[#292929]">
+                      a) Berapakah luas taman tersebut ? <br>
+                      b) Jika harga rumput adalah Rp.25.000 per meter persegi, berapa biaya yang diperlukan untuk
+                      menutupi seluruh taman dengan rumput tersebut ?<br>
+                      c) Pak Agus hanya memiliki uang Rp.2.000.000. Apakah uang pak agus cukup untuk menutupi seluruh
+                      biaya penanaman rumput ? Jika tidak cukup, berapa kekurangan uangnya ?
+
+                    </p>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- <div class="">
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content5')">
+                  Soal Level 2
+                  <span>&#9662;</span>
+                </button>
+                <div id="content5" class="hidden py-3">
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Orientasi siswa terhadap masalah
                     </div>
 
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Membimbing penyelidikan individu/kelompok
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
+                    <p class="mt-2 text-[#292929]">
+                      Bacalah cerita berikut dengan cermat dan teliti
+                    </p>
+                  </div>
+                  <img src="../assets/image/luasPersegi/soal2.png" alt="ibu tani disawah" class="my-3 mx-auto" />
+                  <p class="mt-2 ml-2 text-[#292929] text-justify">
+                    Siti memiliki sebuah kebun berbentuk persegi panjang.
+                    Panjang kebun tersebut adalah 12 meter, dan lebarnya 8
+                    meter. Siti ingin menanam bunga di seluruh kebunnya.
+                  </p>
 
-                        <span class="w-max">Ayo kita mencari tahu</span>
-                      </div>
-                      <p class="mt-2 text-[#292929]">
-                        1. Bagaimanakah menghitung luas tanah Pak Budi? <br />
-                        2. Berapakah luas tanah yang dimiliki Pak Budi?
-                      </p>
+                  <div class="mx-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Mengorganisasi siswa untuk belajar
                     </div>
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
 
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengembangkan dan menyajikan hasil karya
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo presentasikan di depan kelas</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Jika sudah selesai berdiskusi, setiap perwakilan
-                        kelompok maju untuk mempresentasikan hasil kerja
-                        kelompokmu bersama anggota kelompok yang lain.
-                      </p>
+                      <span class="w-max">Ayo diskusikan bersama temanmu</span>
                     </div>
+                    <p class="mt-2 text-[#292929] text-justify">
+                      Hari ini kita akan menyelesaikan soal luas persegi
+                      panjang melalui permasalahan yang telah disajikan di
+                      atas. Selanjutnya kalian akan mengerjakan soal secara
+                      berkelompok.
+                    </p>
+                  </div>
 
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Menganalisis dan mengevaluasi proses pemecahan masalah
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Selamat kalian telah berhasil belajar materi persegi
-                        panjang dengan baik. Nah, untuk mengukur kemampuan
-                        kalian dalam memahami materi ini, cobalah kalian
-                        mengerjakan soal evaluasi di bawah ini dengan benar dan
-                        tepat ya..
-                      </p>
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Membimbing penyelidikan individu/kelompok
+                    </div>
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
 
-                      <div
-                        class="flex flex-row gap-2 justify-center items-center text-center mx-auto mt-4 font-semibold"
-                      >
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                        Selamat Mengerjakan
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                      </div>
+                      <span class="w-max">Ayo kita mencari tahu</span>
+                    </div>
+                    <p class="mt-2 text-[#292929]">
+                      1. Berapakah luas kebun Siti?<br />
+                      2. Jika setiap kebun membutuhkan 5 bibit bunga, berapa
+                      banyak bibit bunga yang diperlukan Siti untuk menanam
+                      bunga di seluruh kebunnya?
+                    </p>
+                  </div>
+
+                  <div class="mx-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Mengembangkan dan menyajikan hasil karya
+                    </div>
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">Ayo presentasikan di depan kelas</span>
+                    </div>
+                    <p class="mt-2 text-[#292929] text-justify">
+                      Jika sudah selesai berdiskusi, setiap perwakilan
+                      kelompok maju untuk mempresentasikan hasil kerja
+                      kelompokmu bersama anggota kelompok yang lain.
+                    </p>
+                  </div>
+
+                  <div class="mx-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Menganalisis dan mengevaluasi proses pemecahan masalah
+                    </div>
+                    <p class="mt-2 text-[#292929] text-justify">
+                      Selamat kalian telah berhasil belajar materi persegi
+                      panjang dengan baik. Nah, untuk mengukur kemampuan
+                      kalian dalam memahami materi ini, cobalah kalian
+                      mengerjakan soal evaluasi di bawah ini dengan benar dan
+                      tepat ya..
+                    </p>
+
+                    <div class="flex flex-row gap-2 justify-center items-center text-center mx-auto mt-4 font-semibold">
+                      <div class="w-[30px] border-b-2 h-1"></div>
+                      Selamat Mengerjakan
+                      <div class="w-[30px] border-b-2 h-1"></div>
                     </div>
                   </div>
                 </div>
+              </div> -->
 
-                <div class="">
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content5')"
-                  >
-                    Soal Level 2
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content5" class="hidden py-3">
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Orientasi siswa terhadap masalah
-                      </div>
-
-                      <p class="mt-2 text-[#292929]">
-                        Bacalah cerita berikut dengan cermat dan teliti
-                      </p>
-                    </div>
-                    <img
-                      src="../assets/image/luasPersegi/soal2.png"
-                      alt="ibu tani disawah"
-                      class="my-3 mx-auto"
-                    />
-                    <p class="mt-2 ml-2 text-[#292929] text-justify">
-                      Siti memiliki sebuah kebun berbentuk persegi panjang.
-                      Panjang kebun tersebut adalah 12 meter, dan lebarnya 8
-                      meter. Siti ingin menanam bunga di seluruh kebunnya.
-                    </p>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengorganisasi siswa untuk belajar
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo diskusikan bersama temanmu</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Hari ini kita akan menyelesaikan soal luas persegi
-                        panjang melalui permasalahan yang telah disajikan di
-                        atas. Selanjutnya kalian akan mengerjakan soal secara
-                        berkelompok.
-                      </p>
-                    </div>
-
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Membimbing penyelidikan individu/kelompok
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max">Ayo kita mencari tahu</span>
-                      </div>
-                      <p class="mt-2 text-[#292929]">
-                        1. Berapakah luas kebun Siti?<br />
-                        2. Jika setiap kebun membutuhkan 5 bibit bunga, berapa
-                        banyak bibit bunga yang diperlukan Siti untuk menanam
-                        bunga di seluruh kebunnya?
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengembangkan dan menyajikan hasil karya
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo presentasikan di depan kelas</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Jika sudah selesai berdiskusi, setiap perwakilan
-                        kelompok maju untuk mempresentasikan hasil kerja
-                        kelompokmu bersama anggota kelompok yang lain.
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Menganalisis dan mengevaluasi proses pemecahan masalah
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Selamat kalian telah berhasil belajar materi persegi
-                        panjang dengan baik. Nah, untuk mengukur kemampuan
-                        kalian dalam memahami materi ini, cobalah kalian
-                        mengerjakan soal evaluasi di bawah ini dengan benar dan
-                        tepat ya..
-                      </p>
-
-                      <div
-                        class="flex flex-row gap-2 justify-center items-center text-center mx-auto mt-4 font-semibold"
-                      >
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                        Selamat Mengerjakan
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- <div class="">
+              <!-- <div class="">
                   <button
                     class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
                     onclick="toggleContent('content6')"
@@ -475,178 +342,154 @@
                   </div>
                 </div> -->
 
-                <div>
-                  <button
-                    class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                    onclick="toggleContent('content6')"
-                  >
-                    Soal Level 3
-                    <span>&#9662;</span>
-                  </button>
-                  <div id="content6" class="hidden py-3">
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Orientasi siswa terhadap masalah
-                      </div>
-
-                      <p class="mt-2 text-[#292929]">
-                        Bacalah cerita berikut dengan cermat dan teliti
-                      </p>
+              <!-- <div>
+                <button
+                  class="border border-[#017EB9] rounded-lg w-full text-left text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
+                  onclick="toggleContent('content6')">
+                  Soal Level 3
+                  <span>&#9662;</span>
+                </button>
+                <div id="content6" class="hidden py-3">
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Orientasi siswa terhadap masalah
                     </div>
-                    <img
-                      src="../assets/image/luasPersegi/soal3.png"
-                      alt="Pak agus memiliki taman berbentuk persegi panjang"
-                      class="my-3 mx-auto"
-                    />
-                    <p class="mt-2 mx-2 text-[#292929] text-justify">
-                      Pak Agus memiliki sebuah taman berbentuk persegi panjang
-                      akan ditanami rumput. Panjang taman Pak Agus adalah 12
-                      meter, dan lebarnya 8 meter. Rumput tersebut akan
-                      digunakan untuk menutupi seluruh taman.
+
+                    <p class="mt-2 text-[#292929]">
+                      Bacalah cerita berikut dengan cermat dan teliti
+                    </p>
+                  </div>
+                  <img src="../assets/image/luasPersegi/soal3.png"
+                    alt="Pak agus memiliki taman berbentuk persegi panjang" class="my-3 mx-auto" />
+                  <p class="mt-2 mx-2 text-[#292929] text-justify">
+                    Pak Agus memiliki sebuah taman berbentuk persegi panjang
+                    akan ditanami rumput. Panjang taman Pak Agus adalah 12
+                    meter, dan lebarnya 8 meter. Rumput tersebut akan
+                    digunakan untuk menutupi seluruh taman.
+                  </p>
+
+                  <div class="mx-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Mengorganisasi siswa untuk belajar
+                    </div>
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">Ayo diskusikan bersama temanmu</span>
+                    </div>
+                    <p class="mt-2 text-[#292929] text-justify">
+                      Hari ini kita akan menyelesaikan soal luas persegi
+                      panjang melalui permasalahan yang telah disajikan di
+                      atas. Selanjutnya kalian akan mengerjakan soal secara
+                      berkelompok.
+                    </p>
+                  </div>
+
+                  <div class="ml-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Membimbing penyelidikan individu/kelompok
+                    </div>
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">Ayo kita mencari tahu</span>
+                    </div>
+                    <p class="mt-2 text-[#292929]">
+                      1. Jika harga rumput adalah Rp25.000 per meter persegi,
+                      berapa biaya yang diperlukan untuk menutupi seluruh
+                      taman dengan rumput? <br />
+                      2. Pak Agus hanya memiliki uang Rp2.000.000. Apakah uang
+                      Pak Agus cukup untuk menutupi seluruh biaya penanaman
+                      rumput? Jika tidak cukup, berapa kekurangan uangnya ?
+                    </p>
+                  </div>
+
+                  <div class="mx-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Mengembangkan dan menyajikan hasil karya
+                    </div>
+                    <div
+                      class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2">
+                      <img src="../assets/image/iconstulis.svg" alt="" />
+
+                      <span class="w-max">Ayo presentasikan di depan kelas</span>
+                    </div>
+                    <p class="mt-2 text-[#292929] text-justify">
+                      Jika sudah selesai berdiskusi, setiap perwakilan
+                      kelompok maju untuk mempresentasikan hasil kerja
+                      kelompokmu bersama anggota kelompok yang lain.
+                    </p>
+                  </div>
+
+                  <div class="mx-2 flex flex-col gap-1 mt-5">
+                    <div class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max">
+                      Menganalisis dan mengevaluasi proses pemecahan masalah
+                    </div>
+                    <p class="mt-2 text-[#292929] text-justify">
+                      Selamat kalian telah berhasil belajar materi persegi
+                      panjang dengan baik. Nah, untuk mengukur kemampuan
+                      kalian dalam memahami materi ini, cobalah kalian
+                      mengerjakan soal evaluasi di bawah ini dengan benar dan
+                      tepat ya..
                     </p>
 
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengorganisasi siswa untuk belajar
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo diskusikan bersama temanmu</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Hari ini kita akan menyelesaikan soal luas persegi
-                        panjang melalui permasalahan yang telah disajikan di
-                        atas. Selanjutnya kalian akan mengerjakan soal secara
-                        berkelompok.
-                      </p>
-                    </div>
-
-                    <div class="ml-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Membimbing penyelidikan individu/kelompok
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max">Ayo kita mencari tahu</span>
-                      </div>
-                      <p class="mt-2 text-[#292929]">
-                        1. Jika harga rumput adalah Rp25.000 per meter persegi,
-                        berapa biaya yang diperlukan untuk menutupi seluruh
-                        taman dengan rumput? <br />
-                        2. Pak Agus hanya memiliki uang Rp2.000.000. Apakah uang
-                        Pak Agus cukup untuk menutupi seluruh biaya penanaman
-                        rumput? Jika tidak cukup, berapa kekurangan uangnya ?
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Mengembangkan dan menyajikan hasil karya
-                      </div>
-                      <div
-                        class="flex gap-1 rounded-full bg-[#B25050] min-w-xs max-w-max h-auto px-2 py-1 text-white mt-2"
-                      >
-                        <img src="../assets/image/iconstulis.svg" alt="" />
-
-                        <span class="w-max"
-                          >Ayo presentasikan di depan kelas</span
-                        >
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Jika sudah selesai berdiskusi, setiap perwakilan
-                        kelompok maju untuk mempresentasikan hasil kerja
-                        kelompokmu bersama anggota kelompok yang lain.
-                      </p>
-                    </div>
-
-                    <div class="mx-2 flex flex-col gap-1 mt-5">
-                      <div
-                        class="px-2 py-1 border-[#A8A8A8] text-[#A8A8A8] border-2 border-dashed max-w-max"
-                      >
-                        Menganalisis dan mengevaluasi proses pemecahan masalah
-                      </div>
-                      <p class="mt-2 text-[#292929] text-justify">
-                        Selamat kalian telah berhasil belajar materi persegi
-                        panjang dengan baik. Nah, untuk mengukur kemampuan
-                        kalian dalam memahami materi ini, cobalah kalian
-                        mengerjakan soal evaluasi di bawah ini dengan benar dan
-                        tepat ya..
-                      </p>
-
-                      <div
-                        class="flex flex-row gap-2 justify-center items-center text-center mx-auto mt-4 font-semibold"
-                      >
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                        Selamat Mengerjakan
-                        <div class="w-[30px] border-b-2 h-1"></div>
-                      </div>
+                    <div class="flex flex-row gap-2 justify-center items-center text-center mx-auto mt-4 font-semibold">
+                      <div class="w-[30px] border-b-2 h-1"></div>
+                      Selamat Mengerjakan
+                      <div class="w-[30px] border-b-2 h-1"></div>
                     </div>
                   </div>
                 </div>
+              </div> -->
 
-                <a
-                  href="https://drive.google.com/file/d/1c3tMjH5gOxNMhdAGAb4Ar-8n2KCNPHrK/view?usp=sharing"
-                  target="_blank"
-                  class="border border-[#017EB9] rounded-lg w-full text-left bg-[#d4f5fd] text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center"
-                >
-                  Soal Evaluasi
-                </a>
-              </div>
-            </section>
-          </div>
+              <a href="https://drive.google.com/file/d/1c3tMjH5gOxNMhdAGAb4Ar-8n2KCNPHrK/view?usp=sharing"
+                target="_blank"
+                class="border border-[#017EB9] rounded-lg w-full text-left bg-[#d4f5fd] text-[#017EB9] py-2 px-3 font-semibold flex justify-between items-center">
+                Soal Evaluasi
+              </a>
+            </div>
+          </section>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <script>
-      function toggleContent(id) {
-        document.querySelectorAll("[id^=content]").forEach((el) => {
-          if (el.id === id) {
-            if (el.classList.contains("hidden")) {
-              el.classList.remove("hidden");
-              el.classList.add("slide-down");
-            } else {
-              el.classList.add("hidden");
-              el.classList.remove("slide-down");
-            }
+  <script>
+    function toggleContent(id) {
+      document.querySelectorAll("[id^=content]").forEach((el) => {
+        if (el.id === id) {
+          if (el.classList.contains("hidden")) {
+            el.classList.remove("hidden");
+            el.classList.add("slide-down");
           } else {
             el.classList.add("hidden");
             el.classList.remove("slide-down");
           }
-        });
-      }
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script>
-      var swiper = new Swiper(".swiper-container", {
-        slidesPerView: 2,
-        spaceBetween: 10,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+        } else {
+          el.classList.add("hidden");
+          el.classList.remove("slide-down");
+        }
       });
-    </script>
-  </body>
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: 2,
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  </script>
+</body>
+
 </html>
