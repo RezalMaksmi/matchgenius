@@ -1434,6 +1434,9 @@
   .bg-\[url\(\'\.\.\/img\/bg\.png\'\)\] {
     background-image: url('../img/bg.png');
   }
+  .bg-\[url\(\'\.\/image\/GAMBAR\.jpg\'\)\] {
+    background-image: url('./image/GAMBAR.jpg');
+  }
   .bg-\[url\(\'\.\/image\/bgbody\.png\'\)\] {
     background-image: url('./image/bgbody.png');
   }
