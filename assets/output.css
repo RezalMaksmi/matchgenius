@@ -1446,6 +1446,9 @@
   .bg-\[url\(\'\.\/image\/navbar\.png\'\)\] {
     background-image: url('./image/navbar.png');
   }
+  .bg-\[url\(\'\.\/image\/school\.jpg\'\)\] {
+    background-image: url('./image/school.jpg');
+  }
   .bg-none {
     background-image: none;
   }
